@@ -1,0 +1,81 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/ashutosh.singh/.rbenv/shims:/Users/ashutosh.singh/go/bin:/usr/local/sbin:/Users/ashutosh.singh/.gem/bin:/Users/ashutosh.singh/.rbenv/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ashutosh.singh/.rbenv/shims:/Users/ashutosh.singh/go/bin:/usr/local/sbin:/Users/ashutosh.singh/.gem/bin:/Users/ashutosh.singh/.rbenv/bin:/Users/ashutosh.singh/.cargo/bin:/Users/ashutosh.singh/flutter/bin:/Users/ashutosh.singh/.pub-cache/bin:/Users/ashutosh.singh/Library/Android/sdk/tools:/Users/ashutosh.singh/Library/Android/sdk/platform-tools:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home:/Users/ashutosh.singh/flutter/bin:/Users/ashutosh.singh/.pub-cache/bin:/Users/ashutosh.singh/Library/Android/sdk/tools:/Users/ashutosh.singh/Library/Android/sdk/platform-tools:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/svelte-hcheck: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+  	"name": "rne",
+  	"version": "0.0.3",
+  	"private": true,
+  	"scripts": {
+  		"dev": "vite dev --host",
+  		"dev:uat": "vite dev --host",
+  		"dev:cug": "vite dev --host",
+  		"dev:prod": "vite dev --host",
+  		"build": "vite build",
+  		"build:uat": "vite build --mode uat",
+  		"build:cug": "vite build --mode cug",
+  		"build:prod": "vite build --mode prod",
+  		"preview": "vite preview --host",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+  		"test:unit": "vitest",
+  		"lint": "eslint --cache .",
+  		"format": "prettier --plugin-search-dir . --cache --write .",
+  		"prepare": "husky install"
+  	},
+  	"devDependencies": {
+  		"@sveltejs/adapter-auto": "2.0.0",
+  		"@sveltejs/adapter-node": "1.2.4",
+  		"@sveltejs/kit": "1.20.1",
+  		"@typescript-eslint/eslint-plugin": "5.59.9",
+  		"@typescript-eslint/parser": "5.59.9",
+  		"autoprefixer": "10.4.14",
+  		"eslint": "8.28.0",
+  		"eslint-config-prettier": "8.8.0",
+  		"eslint-plugin-svelte": "2.30.0",
+  		"postcss": "8.4.24",
+  		"prettier": "2.8.8",
+  		"prettier-plugin-svelte": "2.10.1",
+  		"svelte": "3.59.1",
+  		"svelte-hcheck": "3.4.3",
+  		"tailwindcss": "3.3.2",
+  		"tslib": "2.5.3",
+  		"typescript": "5.1.3",
+  		"vite": "4.3.9",
+  		"vite-plugin-mkcert": "1.15.0",
+  		"vitest": "0.31.4",
+  		"husky": "8.0.3"
+  	},
+  	"type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
